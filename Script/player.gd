@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 const SPEED = 170.0 
 const JUMP_VELOCITY = -380.0
-
+const FLOW_VELOCITY = 50
 var took_damage = false  
 
 var Current_timer = 0 
@@ -35,12 +35,14 @@ func _physics_process(delta: float) -> void:
 	# Gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-				
+		
 	# Jump
 	if Input.is_action_just_pressed("Jump") and is_on_floor(): 
 		velocity.y = JUMP_VELOCITY 
 	
+	# Move Left and Right 
 	var direction := Input.get_axis("Left", "Right")
+	
 	if direction:
 		velocity.x = direction * SPEED
 		animated_sprite.flip_h = direction < 0; 
