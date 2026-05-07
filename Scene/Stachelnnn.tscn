@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cn4sp3wcqmcom"]
+
+[ext_resource type="Texture2D" uid="uid://b6mfbwmvflxey" path="res://TileSet/Spikes.png" id="1_2jrrv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xixlj"]
+size = Vector2(20, 6)
+
+[node name="Area2D" type="Area2D" unique_id=1683285144]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1895651835]
+position = Vector2(-5.9604645e-08, -0.5)
+scale = Vector2(0.8333334, 0.9375)
+texture = ExtResource("1_2jrrv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1868716823]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_xixlj")

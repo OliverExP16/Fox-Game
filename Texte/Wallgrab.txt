@@ -1,0 +1,104 @@
+extends CharacterBody2D
+
+@onready var Animated = $AnimatedPlayer
+@onready var Run_idle = $Run_IdleColl
+@onready var wall_coll = $WallGrabColl
+
+const SPEED = 200.0
+const JUMP_VELOCITY = -400.0
+var current_animation = ""
+
+var lifes = 3
+var Current_timer = 0
+var Limit_timer = 30
+var Limit_end = 120
+
+@export var spawn_position: Vector2
+
+
+func respawn():
+	global_position = spawn_position
+	velocity = Vector2.ZERO
+	lifes -= 1
+	print(lifes)
+
+
+func _physics_process(delta: float) -> void:
+
+	# Timer
+	if Input.is_action_pressed("Left") or Input.is_action_pressed("Right") or Input.is_action_pressed("Jump"):
+		Current_timer = 0
+	else:
+		Current_timer += delta
+
+	# Gravity
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	# Jump (ground)
+	if Input.is_action_just_pressed("Jump") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Movement
+	var direction := Input.get_axis("Left", "Right")
+	if direction != 0:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	# Wall Jump & Slide
+	if Input.is_action_just_pressed("Jump") and is_on_wall():
+		var push_dir = -sign(get_wall_normal().x)
+		position.x += push_dir * 5
+		velocity.y = JUMP_VELOCITY + 100.0 
+		velocity.x = push_dir * 100
+		current_animation = "Jump"
+		Animated.flip_h = push_dir < 0
+		Animated.play("Jump")
+	
+	elif is_on_wall() and not is_on_floor() and velocity.y > 0:
+		velocity.y = 20  
+		Animated.play("Wallgrab") 
+		current_animation = "Wallgrab"
+		Animated.flip_h = get_wall_normal().x < 0
+	
+	else:
+		if not is_on_floor():
+			if direction != 0:
+				Animated.flip_h = direction < 0
+			
+			if velocity.y < -10:
+				Animated.play("Jump")
+				current_animation = "Jump"
+			elif velocity.y > 10:
+				Animated.play("Fall")
+				current_animation = "Fall"
+			else:
+				Animated.play("Jump")
+				current_animation = "Jump"
+		else:
+			if direction != 0:
+				Animated.play("Run")
+				current_animation = "Run"
+				Animated.flip_h = direction < 0
+			else:
+				if Current_timer >= Limit_end: 
+					Animated.play("Idle_80")
+					current_animation = "Idle"
+				elif Current_timer >= Limit_timer: 
+					Animated.play("Idle_30")
+					current_animation = "Idle"
+				else: 
+					Animated.play("Idle")
+					current_animation = "Idle"
+
+	move_and_slide()
+
+	if current_animation == "Wallgrab":
+		wall_coll.disabled = false
+		Run_idle.disabled = true
+		print("Wallgrab")
+	else:
+		wall_coll.disabled = true
+		Run_idle.disabled = false
+		print("Run or Idle")
