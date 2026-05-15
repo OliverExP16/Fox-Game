@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6mfbwmvflxey"
-path="res://.godot/imported/Spikes.png-e6dfa75cbdef2aa8572378637a1be683.ctex"
+uid="uid://dvjx6ab6meicw"
+path="res://.godot/imported/06_back_mountains.png-9e9f8bcc370e9a18d48cd1fe7145c7ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/Spikes.png"
-dest_files=["res://.godot/imported/Spikes.png-e6dfa75cbdef2aa8572378637a1be683.ctex"]
+source_file="res://Background/06_back_mountains.png"
+dest_files=["res://.godot/imported/06_back_mountains.png-9e9f8bcc370e9a18d48cd1fe7145c7ba.ctex"]
 
 [params]
 

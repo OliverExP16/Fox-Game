@@ -11,8 +11,11 @@ config_version=5
 [application]
 
 config/name="Fox Action"
+config/version="1.0.0"
 run/main_scene="res://Scene/Level.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=60
+run/low_processor_mode=true
 
 [display]
 
@@ -27,6 +30,10 @@ window/stretch/mode="viewport"
 
 Player=""
 Death=""
+
+[gui]
+
+fonts/dynamic_fonts/use_oversampling=false
 
 [input]
 
@@ -64,9 +71,22 @@ Flow_Jump={
 2d_physics/layer_1="Ground/Wall/Celling"
 2d_physics/layer_2="Spikes"
 
+[memory]
+
+limits/message_queue/max_size_mb=16
+
+[network]
+
+limits/packet_peer_stream/max_buffer_po2=30
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
+2d/snap/snap_2d_transforms_to_pixel=false
+2d/snap/snap_2d_vertices_to_pixel=false
+2d/depth_of_field/depth_of_field_use_jitter=false
+2d/snap_controls_to_pixels=true
+2d/defaults/default_clear_color=Color(0.3319059, 0.2452083, 0.49156767, 1)
 
 [rendering]
 
@@ -75,3 +95,4 @@ rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 viewport/hdr_2d=true
+environment/defaults/default_clear_color=Color(0.66355026, 0.65794486, 0.7123907, 1)

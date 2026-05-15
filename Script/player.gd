@@ -5,12 +5,15 @@ extends CharacterBody2D
 const SPEED = 170.0 
 const JUMP_VELOCITY = -380.0
 const FLOW_VELOCITY = 50
+
 var took_damage = false  
+
+const COYOTE_TIME: float = 0.15 
+var coyote_timer: float = 0.0
 
 var Current_timer = 0 
 var Limit_timer = 30 
 var Limit_end = 120
-
 @export var spawn_position: Vector2
 
 func respawn():
@@ -37,9 +40,18 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 		
 	# Jump
-	if Input.is_action_just_pressed("Jump") and is_on_floor(): 
-		velocity.y = JUMP_VELOCITY 
+	if is_on_floor(): 
+		coyote_timer = COYOTE_TIME
+	else: 
+		coyote_timer -= delta 
 	
+	if Input.is_action_just_pressed("Jump") and coyote_timer > 0: 
+		velocity.y = JUMP_VELOCITY
+		coyote_timer = 0
+	elif velocity.y < 0.0: 
+		if Input.is_action_just_released("Jump"): 
+			velocity.y *= 0.5 
+		
 	# Move Left and Right 
 	var direction := Input.get_axis("Left", "Right")
 	
