@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1v4uxvla75jq"
+path="res://.godot/imported/Enchanted Woodland.wav-3058e9fd2468e268ac2021012c2586d5.sample"
+
+[deps]
+
+source_file="res://Music/Enchanted Woodland.wav"
+dest_files=["res://.godot/imported/Enchanted Woodland.wav-3058e9fd2468e268ac2021012c2586d5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
