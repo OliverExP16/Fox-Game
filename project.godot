@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Fox Action"
 config/version="1.0.0"
-run/main_scene="res://Scene/Level.tscn"
+run/main_scene="uid://eyufqgknk1jb"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60
 run/low_processor_mode=true
@@ -65,6 +65,11 @@ Down_Key_joy={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":12,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
+Start={
+"deadzone": 0.2,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":true,"script":null)
+]
+}
 
 [layer_names]
 
@@ -96,4 +101,4 @@ renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 2d/shadow_atlas/size=2050
 viewport/hdr_2d=true
-environment/defaults/default_clear_color=Color(0.60784316, 0.7294118, 0.87058824, 1)
+environment/defaults/default_clear_color=Color(0.56146866, 0.73789996, 0.7915976, 1)

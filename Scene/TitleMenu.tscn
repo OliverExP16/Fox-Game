@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://eyufqgknk1jb"]
+
+[ext_resource type="Script" uid="uid://crb2jfgpuw7u" path="res://Script/Control.gd" id="1_d0s0c"]
+
+[node name="Control" type="Control" unique_id=739839187]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d0s0c")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=87641656]
+
+[node name="Button" type="Button" parent="." unique_id=143426]
+layout_mode = 0
+offset_left = 513.0
+offset_top = 247.0
+offset_right = 786.0
+offset_bottom = 339.0
+text = "Level (Konzept)"
+
+[node name="Label" type="Label" parent="." unique_id=1681832363]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 68.0
+offset_right = 1126.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 40
+text = "Fox"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
