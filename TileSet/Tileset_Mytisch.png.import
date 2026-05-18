@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbm50otrbk2xs"
-path="res://.godot/imported/ambient_forest_enviorement.png-a5f00f43b312ac15fce0913037c85f3e.ctex"
+uid="uid://smsec5rd54o1"
+path="res://.godot/imported/Tileset_Mytisch.png-2557e60908ece241846af7324fabf92c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/ambient_forest_enviorement.png"
-dest_files=["res://.godot/imported/ambient_forest_enviorement.png-a5f00f43b312ac15fce0913037c85f3e.ctex"]
+source_file="res://TileSet/Tileset_Mytisch.png"
+dest_files=["res://.godot/imported/Tileset_Mytisch.png-2557e60908ece241846af7324fabf92c.ctex"]
 
 [params]
 

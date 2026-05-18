@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://smsec5rd54o1"
-path="res://.godot/imported/old_growth_tiles_Mystischet-export.png-fd46c0cb3f0d843884fc628cd1f2758d.ctex"
+uid="uid://do4ffqmgnxbop"
+path="res://.godot/imported/Tileset_Winter.png-4dc26197903dd7e450bfa2ce89513d5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/old_growth_tiles_Mystischet-export.png"
-dest_files=["res://.godot/imported/old_growth_tiles_Mystischet-export.png-fd46c0cb3f0d843884fc628cd1f2758d.ctex"]
+source_file="res://TileSet/Tileset_Winter.png"
+dest_files=["res://.godot/imported/Tileset_Winter.png-4dc26197903dd7e450bfa2ce89513d5e.ctex"]
 
 [params]
 

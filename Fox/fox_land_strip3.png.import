@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caqpilhdw481u"
-path="res://.godot/imported/Tilemap.png-0926ddb0aae3e50f10b4beeeb8a59f92.ctex"
+uid="uid://bjjfq4gnpncss"
+path="res://.godot/imported/fox_land_strip3.png-abc036844182a2ed9bdfb882e10bba28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/Tilemap.png"
-dest_files=["res://.godot/imported/Tilemap.png-0926ddb0aae3e50f10b4beeeb8a59f92.ctex"]
+source_file="res://Fox/fox_land_strip3.png"
+dest_files=["res://.godot/imported/fox_land_strip3.png-abc036844182a2ed9bdfb882e10bba28.ctex"]
 
 [params]
 

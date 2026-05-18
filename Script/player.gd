@@ -9,6 +9,9 @@ const JUMP_VELOCITY = -380.0
 const FLOW_VELOCITY = 50
 var took_damage = false  
 
+const ACCELERATION = 900.0
+const FRICTION = 1400.0
+
 const COYOTE_TIME: float = 0.10 
 var coyote_timer: float = 0.0
 
@@ -27,11 +30,11 @@ func respawn():
 	
 func _physics_process(delta: float) -> void: 
 	var active = (
-		Input.is_action_just_pressed("Left")
+		Input.is_action_just_pressed("Left_Key_joy")
 		or 
-		Input.is_action_just_pressed("Right")
+		Input.is_action_just_pressed("Right_Key_joy")
 		or 
-		Input.is_action_just_pressed("Jump")
+		Input.is_action_just_pressed("Jump_Key_joy")
 	)
 	
 	if active: 
@@ -49,7 +52,7 @@ func _physics_process(delta: float) -> void:
 	else: 
 		coyote_timer -= delta 
 	
-	if Input.is_action_just_pressed("Jump"): 
+	if Input.is_action_just_pressed("Jump_Key_joy"): 
 		jump_buffer_timer = JUMP_BUFFER_TIMER
 	else: 
 		jump_buffer_timer -= delta 
@@ -59,20 +62,17 @@ func _physics_process(delta: float) -> void:
 		jump_buffer_timer = 0 
 		coyote_timer = 0 
 		
-	if Input.is_action_just_released("Jump") and velocity.y < 0: 
+	if Input.is_action_just_released("Jump_Key_joy") and velocity.y < 0: 
 		velocity.y *= 0.5 
 		
 	# Move Left and Right 
-	var direction := Input.get_axis("Left", "Right")
+	var direction := Input.get_axis("Left_Key_joy", "Right_Key_joy")
 	
 	if direction:
-		velocity.x = move_toward(
-			velocity.x,
-			direction * SPEED,
-			900 * delta)	
+		velocity.x = move_toward(velocity.x, direction * SPEED, ACCELERATION * delta)	
 		animated_sprite.flip_h = direction < 0; 
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
 		
 	# Animationen
 	if not is_on_floor():
