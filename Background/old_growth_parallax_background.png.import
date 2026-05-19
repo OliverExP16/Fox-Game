@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7ffh7g1aj8ci"
-path="res://.godot/imported/12_front_trees2.png-a99432aac0194e354d5b9d59f6852320.ctex"
+uid="uid://bs7pfykthylml"
+path="res://.godot/imported/old_growth_parallax_background.png-02ed24c60a363b1bddda78b7058ce051.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background/12_front_trees2.png"
-dest_files=["res://.godot/imported/12_front_trees2.png-a99432aac0194e354d5b9d59f6852320.ctex"]
+source_file="res://Background/old_growth_parallax_background.png"
+dest_files=["res://.godot/imported/old_growth_parallax_background.png-02ed24c60a363b1bddda78b7058ce051.ctex"]
 
 [params]
 

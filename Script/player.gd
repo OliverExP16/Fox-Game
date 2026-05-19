@@ -23,6 +23,12 @@ var Limit_timer = 30
 var Limit_end = 120
 @export var spawn_position: Vector2
 
+var dead = false : 
+	set(value):
+		dead = value 
+		if value == true: 
+			respawn()
+
 func respawn():
 	global_position = spawn_position
 	velocity = Vector2.ZERO

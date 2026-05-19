@@ -2,6 +2,15 @@
 
 [ext_resource type="Script" uid="uid://crb2jfgpuw7u" path="res://Script/Control.gd" id="1_d0s0c"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d0s0c"]
+load_path = "res://.godot/imported/06_back_mountains.png-9e9f8bcc370e9a18d48cd1fe7145c7ba.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v18xj"]
+load_path = "res://.godot/imported/07_mid_hills.png-644832240dcc06452e372620721a723c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_idssj"]
+load_path = "res://.godot/imported/08_mid_forest.png-b6b29c08302ca1a69ed47b4cee49aca1.ctex"
+
 [node name="Control" type="Control" unique_id=739839187]
 layout_mode = 3
 anchors_preset = 15
@@ -31,5 +40,54 @@ theme_override_font_sizes/font_size = 40
 text = "Fox"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=2050609212]
+visible = false
+
+[node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1764584893]
+visible = false
+motion_mirroring = Vector2(600, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer1" unique_id=184325721]
+position = Vector2(346, 295.5)
+scale = Vector2(2.1062498, 2.838889)
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/Layer1" unique_id=2016999850]
+position = Vector2(281.99997, 183)
+scale = Vector2(1.0363443, 1.6549977)
+
+[node name="Layer2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=582867935]
+visible = false
+motion_mirroring = Vector2(599, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer2" unique_id=1011875630]
+position = Vector2(306, 283)
+scale = Vector2(1.8718749, 2.6777778)
+texture = SubResource("CompressedTexture2D_d0s0c")
+
+[node name="Layer3" type="ParallaxLayer" parent="ParallaxBackground" unique_id=631252297]
+visible = false
+motion_mirroring = Vector2(700, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer3" unique_id=563395845]
+position = Vector2(361.75, 297)
+scale = Vector2(2.1890626, 2.8111112)
+texture = SubResource("CompressedTexture2D_v18xj")
+
+[node name="Layer4" type="ParallaxLayer" parent="ParallaxBackground" unique_id=487374155]
+visible = false
+motion_mirroring = Vector2(776, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer4" unique_id=768429818]
+position = Vector2(396.5, 294.5)
+scale = Vector2(2.428125, 2.838889)
+texture = SubResource("CompressedTexture2D_idssj")
+
+[node name="Layer5" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1139003019]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer5" unique_id=602813642]
+position = Vector2(137.00002, 409.99997)
+scale = Vector2(0.809375, 1.0833334)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

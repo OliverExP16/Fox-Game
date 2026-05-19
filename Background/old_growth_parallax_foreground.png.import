@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwnr4ewww4ps1"
-path="res://.godot/imported/07_mid_hills.png-644832240dcc06452e372620721a723c.ctex"
+uid="uid://cmd32wntp2faw"
+path="res://.godot/imported/old_growth_parallax_foreground.png-317909ca1ae5b49750d622e0230f6e29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background/07_mid_hills.png"
-dest_files=["res://.godot/imported/07_mid_hills.png-644832240dcc06452e372620721a723c.ctex"]
+source_file="res://Background/old_growth_parallax_foreground.png"
+dest_files=["res://.godot/imported/old_growth_parallax_foreground.png-317909ca1ae5b49750d622e0230f6e29.ctex"]
 
 [params]
 
