@@ -22,6 +22,7 @@ var Current_timer = 0
 var Limit_timer = 30 
 var Limit_end = 120
 @export var spawn_position: Vector2
+@export var Checkpoint1: Vector2 
 
 var dead = false : 
 	set(value):
@@ -42,6 +43,9 @@ func _physics_process(delta: float) -> void:
 		or 
 		Input.is_action_just_pressed("Jump_Key_joy")
 	)
+	
+	if Input.is_action_just_pressed("Start"): 
+		get_tree().change_scene_to_file("res://Scene/TitleMenu.tscn")
 	
 	if active: 
 		Current_timer = 0 
@@ -101,7 +105,4 @@ func _physics_process(delta: float) -> void:
 				animated_sprite.play("Idle")
 		
 	move_and_slide()
-	
-	print("X: " , global_position.x)
-	print("Y: " , global_position.y)
 	
