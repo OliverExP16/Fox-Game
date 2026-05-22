@@ -101,3 +101,7 @@ func _physics_process(delta: float) -> void:
 				animated_sprite.play("Idle")
 		
 	move_and_slide()
+	
+	print("X: " , global_position.x)
+	print("Y: " , global_position.y)
+	
