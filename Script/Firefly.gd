@@ -10,4 +10,7 @@ func _instant_spawn():
 	
 	await get_tree().create_timer(0.1).timeout
 	
-	lifetime = 60
+	lifetime = 120
+	
+	
+	

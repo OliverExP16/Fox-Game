@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e6pgwc5ulhgi"
-path="res://.godot/imported/Flare_small.PNG-1694ef7dfcfb5f8180db21fe7e1f3fb0.ctex"
+uid="uid://dbe2xhtcaqbwh"
+path="res://.godot/imported/Sky_Ice.png-3b54b0e11076f10d845c75589563d8a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Flare_small.PNG"
-dest_files=["res://.godot/imported/Flare_small.PNG-1694ef7dfcfb5f8180db21fe7e1f3fb0.ctex"]
+source_file="res://Sky_Ice.png"
+dest_files=["res://.godot/imported/Sky_Ice.png-3b54b0e11076f10d845c75589563d8a0.ctex"]
 
 [params]
 

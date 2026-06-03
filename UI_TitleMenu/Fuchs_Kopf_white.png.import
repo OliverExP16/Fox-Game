@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0xkij3ugxjva"
-path="res://.godot/imported/Tileset.png-af0117f236efde539c751cbad898b4cd.ctex"
+uid="uid://cd5njcewfkel"
+path="res://.godot/imported/Fuchs_Kopf_white.png-c887d8fbe9b706e4c21e16e8afab5c58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-af0117f236efde539c751cbad898b4cd.ctex"]
+source_file="res://UI_TitleMenu/Fuchs_Kopf_white.png"
+dest_files=["res://.godot/imported/Fuchs_Kopf_white.png-c887d8fbe9b706e4c21e16e8afab5c58.ctex"]
 
 [params]
 

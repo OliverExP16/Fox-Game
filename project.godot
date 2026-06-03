@@ -25,7 +25,7 @@ window/size/viewport_height=700
 window/size/mode=2
 window/size/initial_position_type=3
 window/size/no_focus=true
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 
 [global_group]
 

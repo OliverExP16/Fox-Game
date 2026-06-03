@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://65m60hd7v3ea"
-path="res://.godot/imported/old_growth_parallax_midground.png-01459cd09654eebe830bafb310363d99.ctex"
+uid="uid://ba21u7nhofsq5"
+path="res://.godot/imported/Winter_for.png-4dd051d646ff104c3e2438b74e8b9d62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background/old_growth_parallax_midground.png"
-dest_files=["res://.godot/imported/old_growth_parallax_midground.png-01459cd09654eebe830bafb310363d99.ctex"]
+source_file="res://Background/Ice/Winter_for.png"
+dest_files=["res://.godot/imported/Winter_for.png-4dd051d646ff104c3e2438b74e8b9d62.ctex"]
 
 [params]
 

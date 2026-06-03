@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4g3yfoh5o0qj"
-path="res://.godot/imported/Tileset_Grass.png-8387fe95d2d912fced64c6b86979264e.ctex"
+uid="uid://btk585l3ckwc7"
+path="res://.godot/imported/Fuchs_Schweif_white.png-fef9b92e3957cfdfd1c9a2a0ba06c264.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/Tileset_Grass.png"
-dest_files=["res://.godot/imported/Tileset_Grass.png-8387fe95d2d912fced64c6b86979264e.ctex"]
+source_file="res://UI_TitleMenu/Fuchs_Schweif_white.png"
+dest_files=["res://.godot/imported/Fuchs_Schweif_white.png-fef9b92e3957cfdfd1c9a2a0ba06c264.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6uo4268snkxv"
-path="res://.godot/imported/Anti_x1_fontV1.1.png-22f4948d00f8a7d5f8dc814a0bddeb51.ctex"
+uid="uid://cmd32wntp2faw"
+path="res://.godot/imported/old_growth_parallax_foreground.png-f9d77f3cda9cec914db50077a79520e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Anti_x1_fontV1.1.png"
-dest_files=["res://.godot/imported/Anti_x1_fontV1.1.png-22f4948d00f8a7d5f8dc814a0bddeb51.ctex"]
+source_file="res://Background/Main/old_growth_parallax_foreground.png"
+dest_files=["res://.godot/imported/old_growth_parallax_foreground.png-f9d77f3cda9cec914db50077a79520e9.ctex"]
 
 [params]
 

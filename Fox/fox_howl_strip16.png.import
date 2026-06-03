@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4g3yfoh5o0qj"
-path="res://.godot/imported/Tileset_Grass.png-8387fe95d2d912fced64c6b86979264e.ctex"
+uid="uid://fkytihhtp671"
+path="res://.godot/imported/fox_howl_strip16.png-6738038ed34ef18fb0c3bc19e73023b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/Tileset_Grass.png"
-dest_files=["res://.godot/imported/Tileset_Grass.png-8387fe95d2d912fced64c6b86979264e.ctex"]
+source_file="res://Fox/fox_howl_strip16.png"
+dest_files=["res://.godot/imported/fox_howl_strip16.png-6738038ed34ef18fb0c3bc19e73023b2.ctex"]
 
 [params]
 
